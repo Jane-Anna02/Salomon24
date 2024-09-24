@@ -1,0 +1,479 @@
+body 
+{
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("assets/BG.jpg");
+}
+
+.h1{
+        font-weight: 400;
+        font-size: larger;
+
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background-color: rgba(218, 212, 212, 0.742); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; 
+    width: 100%; 
+    font-weight: 200;
+}
+
+.special
+{
+  
+    font-size: 2em;
+    color: #000000ee;
+    margin-bottom: 20px;
+}
+
+.nav ul
+{
+    list-style: none;
+}
+
+.nav ul li
+{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.nav ul li a:hover
+{
+    color: red;
+}
+
+.nav .icons i
+{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav .icons i:hover
+{
+    color: red;
+}
+
+.new
+{
+    margin-top: 60px; 
+    padding-top: 45px;
+    font-size: 40px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.products 
+{
+    padding-top: 100px; 
+    margin-right: 120px;
+}
+
+.heading
+{
+    
+    font-weight: 600;
+    text-align: center;
+}
+
+.button
+{
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.815),rgba(183, 183, 183, 0.71));
+    color: #000000;
+}
+
+.box 
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 65px;
+    margin-right: 86px;
+    padding-right: 50px;
+}
+
+.small_card
+{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.products .box .card:hover .small_card
+{
+    
+    cursor: pointer;
+    opacity: 1;
+}
+
+.products .box .card .image
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .box .card .image img
+{
+    padding: 10px 20px;
+    width: 220px;
+    height: 250px;
+    transition: 0.3s;
+}
+
+.products .box .card .small_card i
+{
+    width: 20px;
+    height:20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0;
+    line-height: 20px;
+    border: 2px solid rgb(143, 101, 101);
+}
+
+.products .box .card :hover.image img
+{
+    transform: scale(1.1);
+    
+}
+
+ .card
+{
+    text-align: center;
+    box-shadow: 0 0 8px rgba(27, 28, 28, 0.404);
+    background: rgb(245, 245, 245);
+    padding: 10px 20px;
+    border-radius: 5px;
+    padding-bottom: 35px;
+}
+
+h3,h4
+{
+        margin: 0;
+}
+     
+.small_card i:hover
+{
+        color: crimson;
+}
+
+.products_star
+{
+        color: rgb(255, 175, 47);
+        margin-bottom: 19px;
+        cursor: pointer;
+}
+
+.btn
+{
+        text-decoration: none;
+        padding: 10px 20px;
+        background: linear-gradient(to right,rgb(237, 234, 234),rgba(145, 141, 145, 0.667));
+        color: rgb(0, 0, 0);
+        border-radius: 5%;
+}
+
+.banner-container
+{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;      
+}
+
+.banner
+{
+        background: linear-gradient(+55deg,rgb(255, 255, 255),rgb(132, 130, 130),rgb(88, 82, 83),rgb(48, 46, 47));
+        border-radius: 5px;
+       
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.342);
+        overflow: hidden;
+        width:82%;
+        height:300px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 10%;
+}
+
+.shoe
+{
+        flex: 1 1 250px;
+        padding: 15px;
+        text-align: center;
+}
+
+.banner-container .banner .shoe img
+{
+        width: 80%;
+ }
+
+.banner-container .banner .content
+{
+        flex: 1 1 250px;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        color: rgba(255, 251, 251, 0.886);
+}
+
+.banner-container .banner .content span
+{
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+}
+
+.button2
+{
+        display: block;
+        height: 40px;
+        width: 150px;
+        line-height: 40px;
+        margin: 20px;
+        position: relative;
+        left: 170px;
+        text-decoration: none;
+        background: linear-gradient(to right,rgb(170, 171, 174),rgb(95, 93, 105));
+        border-radius: 5%;
+        color: rgb(0, 0, 0);
+}
+
+footer
+{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+}
+    
+footer
+{
+        background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/55/marble-2398956_1280.jpg");
+        background-size: contain;
+        padding-top: 50px;
+}
+
+.container
+{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+}
+    
+.footer-content
+{
+        width: 33.3%;
+}
+
+h3
+{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+}
+    
+.footer-content p
+{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+}
+    
+.footer-content ul
+{
+        text-align: center;
+}
+    
+.endings
+{
+        padding: 0;
+}
+    
+.endings li
+{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+        cursor: pointer;
+    
+        .endings
+        {
+            color: aliceblue;
+        }   
+        
+}
+    
+.endings li::before
+{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #ffffff;
+        transition-duration: .5s;
+}
+    
+.endings li:hover::before
+{
+        width: 70px;
+}
+    
+.social-icons
+{
+        text-align: center;
+        padding: 0;
+}
+    
+.social-icons li
+{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+}
+    
+.social-icons i
+{
+        color: white;
+        font-size: 25px;
+}
+    
+a
+{
+        text-decoration: none;
+}
+    
+a:hover
+{
+        color: #000000;
+}
+    
+.social-icons i:hover
+{
+        color: #000000;
+}
+    
+.bottom-bar
+{
+        background: #000000;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+}
+
+.bottom-bar p
+{
+        color: #ffffff;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+}
+    
+.products 
+{
+    width: 100%;
+    padding: 25px;
+    margin: auto;
+}
+
+.box 
+{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sort-section 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.sort-section select 
+{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid rgb(128, 128, 128);
+    background-color: #f5f5f5;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.sort-section select:hover 
+{
+    background-color: rgba(219, 214, 214, 0.797);
+    color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+}
+
+.sort-section select:focus 
+{
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.sort-section label 
+{
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+img {
+        width: 150px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        object-fit:contain; /* Ensures the image covers the entire box */
+        border-radius: 10px; /* Optional: Add rounded corners */
+      
+        overflow-clip-margin: content-box; /* Control the overflow */
+        overflow: clip; /* Prevent overflow beyond the box */
+    }
+    

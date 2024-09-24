@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALOMON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">
+            <ul>
+                <li class="special">SALOMON</li>
+                <li><a href="#Shoes">Shoes</a></li>
+                <li><a href="#Men">Men</a></li>
+                <li><a href="#Women">Women</a></li>
+                <li><a href="#Kids">Kids</a></li>
+                <li><a href="#Sale">Sale</a></li>
+                <li><a href="#Activities">Activities</a></li>
+                <li><a href="#Explore">Explore</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <a href="#">Search</a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    
+    <section class="new">
+        <div class="heading">
+        <h1>MENS SHOES AND BOOTS</h1>
+        </div>
+    </section>
+    
+    <div class="products">
+        <section class="sort-section">
+            <label for="sort">Sort by:</label>
+            <select id="sort" onchange="sortProducts()">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+            </select>
+        </section>
+        <div class="box" id="Products">
+            <div class="card" data-name="X-ULTRA" data-price="160">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon shoes 1.jpeg" alt="X-ULTRA">
+                </div>
+                <div class="products_text">
+                    <h3>X-ULTRA</h3>
+                    <h4>Men's Winter Boots</h4>
+                    <h4>$160</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+            <div class="card" data-name="AERO-VOLT 2" data-price="180">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon shoes 2.jpeg" alt="AERO-VOLT 2">
+                </div>
+                <div class="products_text">
+                    <h3>AERO-VOLT 2</h3>
+                    <h4>Men's Hiking Shoes</h4>
+                    <h4>$180</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+            <div class="card" data-name="ELIXIR ACTIV" data-price="260">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon Shoes 3.jpeg" alt="ELIXIR ACTIV">
+                </div>
+                <div class="products_text">
+                    <h3>ELIXIR ACTIV</h3>
+                    <h4>Men's Hiking Shoes</h4>
+                    <h4>$260</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+            <div class="card" data-name="QUEST 4D FORCES 2" data-price="220">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon shoes 4.jpeg" alt="QUEST 4D FORCES 2">
+                </div>
+                <div class="products_text">
+                    <h3>QUEST 4D FORCES 2</h3>
+                    <h4>Men's Winter Boots</h4>
+                    <h4>$220</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+            <div class="card" data-name="XA FORCES MID" data-price="150">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon shoes 5.jpeg" alt="XA FORCES MID">
+                </div>
+                <div class="products_text">
+                    <h3>XA FORCES MID</h3>
+                    <h4>Men's Winter Boots</h4>
+                    <h4>$150</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+            <div class="card" data-name="ULTRA FLOW" data-price="185">
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="image">
+                    <img src="assets/Salomon shoes 6.jpeg" alt="ULTRA FLOW">
+                </div>
+                <div class="products_text">
+                    <h3>ULTRA FLOW</h3>
+                    <h4>Men's Hiking Shoes</h4>
+                    <h4>$185</h4>
+                </div>
+                <div class="products_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="banner-container">
+        <div class="banner">
+            <div class="shoe">
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310_1280.png" alt="Banner pic">
+            </div>
+            <div class=content>
+                <span>Flash Sale</span>
+                <h2>upto</h2>
+                <h2>50% Off</h2>
+                <p>offer ends after 5 days</p>
+                <a href="#" class="button2">View Offer</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>About Us</h3>
+                <p>Learn more about our mission and values.</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="endings">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Salomon. All rights reserved.</p>
+        </div>
+    </footer>
+    
+ <script src="sort.js"></script>
+</body>
+</html>
